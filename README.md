@@ -9,13 +9,3 @@ The objective of the project was to design and develop an application to manage 
 group. Several applications of this style already exist. We can mention the most known, Tricount, but also Splitwise for example.
 
 The application allows to manage Trips, Expenses, Users and also to get the balance at any time. Also, it computes money sharing in a way that minimizes the exchanges of money.
-
-## Screenshots
-
-### Main Menu
-
-![alt text](https://i.imgur.com/TlHX76p.png)
-
-### Users List
-
-### Balance
