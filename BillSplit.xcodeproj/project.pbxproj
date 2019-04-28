@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032D75182242284F008908FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D75172242284F008908FE /* ProfileViewController.swift */; };
+		032D75452242C14F008908FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032D75442242C14F008908FE /* Main.storyboard */; };
+		032D75472242C43F008908FE /* CustomTopTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D75462242C43F008908FE /* CustomTopTabBarController.swift */; };
+		032D754D2242E36B008908FE /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D754C2242E36B008908FE /* MembersViewController.swift */; };
+		032D754F2242E468008908FE /* MemberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D754E2242E468008908FE /* MemberViewCell.swift */; };
+		033A0AB82249578300EB3EB8 /* BillSplit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 033A0AB62249578300EB3EB8 /* BillSplit.xcdatamodeld */; };
+		033B439D22539F4A004AA9D1 /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B439C22539F4A004AA9D1 /* AttachmentHandler.swift */; };
+		033B439F2254D805004AA9D1 /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B439E2254D804004AA9D1 /* ExpenseDetailViewController.swift */; };
+		0390A23E224D717C009C990C /* ImageViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A23D224D717C009C990C /* ImageViewHelper.swift */; };
+		0390A244224FE3BF009C990C /* TextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A243224FE3BF009C990C /* TextFieldHelper.swift */; };
+		0390A28322512EAF009C990C /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A28222512EAF009C990C /* ExpenseModel.swift */; };
+		0390A28522518752009C990C /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A28422518752009C990C /* StringHelper.swift */; };
+		0390A2892252445C009C990C /* BarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A2872252445C009C990C /* BarEntry.swift */; };
+		0390A28A2252445C009C990C /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A2882252445C009C990C /* BarChart.swift */; };
+		0390A28C2252476B009C990C /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A28B2252476B009C990C /* ColorHelper.swift */; };
+		0390A28E22524BDF009C990C /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A28D22524BDF009C990C /* BalanceViewController.swift */; };
+		0390A29022526598009C990C /* BalanceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A28F22526598009C990C /* BalanceViewCell.swift */; };
+		0390A292225281E0009C990C /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A291225281E0009C990C /* BasicBarChart.swift */; };
+		0390A29422528E7A009C990C /* EditMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A29322528E7A009C990C /* EditMemberViewController.swift */; };
+		0390A29B22529CEE009C990C /* SplitCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A29A22529CEE009C990C /* SplitCollectionController.swift */; };
+		0390A29D2252A0F0009C990C /* SplitSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390A29C2252A0F0009C990C /* SplitSetViewModel.swift */; };
+		03A55A0422554291007E3AE3 /* ExpenseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A55A0322554291007E3AE3 /* ExpenseTableController.swift */; };
+		03A55A06225542DF007E3AE3 /* ExpenseSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A55A05225542DF007E3AE3 /* ExpenseSetViewModel.swift */; };
+		03DBACC6224964D20014AB97 /* SplitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACC0224964D20014AB97 /* SplitModel.swift */; };
+		03DBACC7224964D20014AB97 /* SplitDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACC2224964D20014AB97 /* SplitDAO.swift */; };
+		03DBACC8224964D20014AB97 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACC4224964D20014AB97 /* CoreDataManager.swift */; };
+		03DBACC9224964D20014AB97 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACC5224964D20014AB97 /* DateExtension.swift */; };
+		03DBACCC22496C3C0014AB97 /* CellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACCB22496C3C0014AB97 /* CellStyle.swift */; };
+		03DBACD22249707B0014AB97 /* ExpenseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACD12249707B0014AB97 /* ExpenseDAO.swift */; };
+		03DBACD4224983CA0014AB97 /* ParticipateDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACD3224983CA0014AB97 /* ParticipateDAO.swift */; };
+		03DBACD6224987B70014AB97 /* ParticipateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACD5224987B70014AB97 /* ParticipateModel.swift */; };
+		03DBACD8224988400014AB97 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACD7224988400014AB97 /* UserDAO.swift */; };
+		03DBACDA2249898A0014AB97 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACD92249898A0014AB97 /* UserModel.swift */; };
+		03DBACE022499CEE0014AB97 /* UItextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACDF22499CEE0014AB97 /* UItextFieldHelper.swift */; };
+		03DBACE222499D1B0014AB97 /* CreateSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACE122499D1B0014AB97 /* CreateSplitViewController.swift */; };
+		03DBACE6224A89120014AB97 /* DetailSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACE5224A89120014AB97 /* DetailSplitViewController.swift */; };
+		03DBACEA224A91BE0014AB97 /* hasSplitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACE9224A91BE0014AB97 /* hasSplitProtocol.swift */; };
+		03DBACEC224BA9850014AB97 /* ArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACEB224BA9850014AB97 /* ArrayHelper.swift */; };
+		03DBACF0224BC5FA0014AB97 /* ExpenseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACEF224BC5FA0014AB97 /* ExpenseViewCell.swift */; };
+		03DBACF2224BC60C0014AB97 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBACF1224BC60C0014AB97 /* ExpenseViewController.swift */; };
+		03E89C60224D4A6B006C2F5C /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E89C5F224D4A6B006C2F5C /* AddExpenseViewController.swift */; };
+		03E89C63224D4AD5006C2F5C /* AddExpenseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E89C62224D4AD5006C2F5C /* AddExpenseViewCell.swift */; };
+		9040A6271FAE741200D89A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6261FAE741200D89A53 /* AppDelegate.swift */; };
+		9040A6291FAE741200D89A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6281FAE741200D89A53 /* ViewController.swift */; };
+		9040A62E1FAE741200D89A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9040A62D1FAE741200D89A53 /* Assets.xcassets */; };
+		9040A6311FAE741200D89A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9040A62F1FAE741200D89A53 /* LaunchScreen.storyboard */; };
+		9040A63C1FAE741200D89A53 /* BillSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A63B1FAE741200D89A53 /* BillSplitTests.swift */; };
+		9040A6471FAE741300D89A53 /* BillSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6461FAE741300D89A53 /* BillSplitUITests.swift */; };
+		9040A6551FAE7A6600D89A53 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9040A6381FAE741200D89A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9040A61B1FAE741200D89A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9040A6221FAE741200D89A53;
+			remoteInfo = cardLayout;
+		};
+		9040A6431FAE741200D89A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9040A61B1FAE741200D89A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9040A6221FAE741200D89A53;
+			remoteInfo = cardLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032D75172242284F008908FE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		032D75442242C14F008908FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		032D75462242C43F008908FE /* CustomTopTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopTabBarController.swift; sourceTree = "<group>"; };
+		032D754C2242E36B008908FE /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		032D754E2242E468008908FE /* MemberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewCell.swift; sourceTree = "<group>"; };
+		033A0AB72249578300EB3EB8 /* BillSplit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BillSplit.xcdatamodel; sourceTree = "<group>"; };
+		033B439C22539F4A004AA9D1 /* AttachmentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentHandler.swift; sourceTree = "<group>"; };
+		033B439E2254D804004AA9D1 /* ExpenseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewController.swift; sourceTree = "<group>"; };
+		0390A23D224D717C009C990C /* ImageViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewHelper.swift; sourceTree = "<group>"; };
+		0390A243224FE3BF009C990C /* TextFieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldHelper.swift; sourceTree = "<group>"; };
+		0390A28222512EAF009C990C /* ExpenseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
+		0390A28422518752009C990C /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		0390A2872252445C009C990C /* BarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarEntry.swift; sourceTree = "<group>"; };
+		0390A2882252445C009C990C /* BarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		0390A28B2252476B009C990C /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		0390A28D22524BDF009C990C /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		0390A28F22526598009C990C /* BalanceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewCell.swift; sourceTree = "<group>"; };
+		0390A291225281E0009C990C /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		0390A29322528E7A009C990C /* EditMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemberViewController.swift; sourceTree = "<group>"; };
+		0390A29A22529CEE009C990C /* SplitCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCollectionController.swift; sourceTree = "<group>"; };
+		0390A29C2252A0F0009C990C /* SplitSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSetViewModel.swift; sourceTree = "<group>"; };
+		03A55A0322554291007E3AE3 /* ExpenseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableController.swift; sourceTree = "<group>"; };
+		03A55A05225542DF007E3AE3 /* ExpenseSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseSetViewModel.swift; sourceTree = "<group>"; };
+		03DBACC0224964D20014AB97 /* SplitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitModel.swift; sourceTree = "<group>"; };
+		03DBACC2224964D20014AB97 /* SplitDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitDAO.swift; sourceTree = "<group>"; };
+		03DBACC4224964D20014AB97 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		03DBACC5224964D20014AB97 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		03DBACCB22496C3C0014AB97 /* CellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStyle.swift; sourceTree = "<group>"; };
+		03DBACD12249707B0014AB97 /* ExpenseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDAO.swift; sourceTree = "<group>"; };
+		03DBACD3224983CA0014AB97 /* ParticipateDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipateDAO.swift; sourceTree = "<group>"; };
+		03DBACD5224987B70014AB97 /* ParticipateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipateModel.swift; sourceTree = "<group>"; };
+		03DBACD7224988400014AB97 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		03DBACD92249898A0014AB97 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		03DBACDF22499CEE0014AB97 /* UItextFieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItextFieldHelper.swift; sourceTree = "<group>"; };
+		03DBACE122499D1B0014AB97 /* CreateSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSplitViewController.swift; sourceTree = "<group>"; };
+		03DBACE5224A89120014AB97 /* DetailSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSplitViewController.swift; sourceTree = "<group>"; };
+		03DBACE9224A91BE0014AB97 /* hasSplitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hasSplitProtocol.swift; sourceTree = "<group>"; };
+		03DBACEB224BA9850014AB97 /* ArrayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHelper.swift; sourceTree = "<group>"; };
+		03DBACEF224BC5FA0014AB97 /* ExpenseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewCell.swift; sourceTree = "<group>"; };
+		03DBACF1224BC60C0014AB97 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		03E89C5F224D4A6B006C2F5C /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		03E89C62224D4AD5006C2F5C /* AddExpenseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewCell.swift; sourceTree = "<group>"; };
+		9040A6231FAE741200D89A53 /* BillSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9040A6261FAE741200D89A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9040A6281FAE741200D89A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9040A62D1FAE741200D89A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9040A6301FAE741200D89A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9040A6321FAE741200D89A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9040A6371FAE741200D89A53 /* BillSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9040A63B1FAE741200D89A53 /* BillSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitTests.swift; sourceTree = "<group>"; };
+		9040A63D1FAE741200D89A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9040A6421FAE741200D89A53 /* BillSplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSplitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9040A6461FAE741300D89A53 /* BillSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitUITests.swift; sourceTree = "<group>"; };
+		9040A6481FAE741300D89A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9040A6201FAE741200D89A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A6341FAE741200D89A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A63F1FAE741200D89A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0390A28622524449009C990C /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				0390A291225281E0009C990C /* BasicBarChart.swift */,
+				0390A2882252445C009C990C /* BarChart.swift */,
+				0390A2872252445C009C990C /* BarEntry.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		0390A2952252929A009C990C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				032D754C2242E36B008908FE /* MembersViewController.swift */,
+				032D75172242284F008908FE /* ProfileViewController.swift */,
+				0390A29322528E7A009C990C /* EditMemberViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0390A296225292A0009C990C /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				0390A29A22529CEE009C990C /* SplitCollectionController.swift */,
+				0390A29C2252A0F0009C990C /* SplitSetViewModel.swift */,
+				03DBACE122499D1B0014AB97 /* CreateSplitViewController.swift */,
+				9040A6281FAE741200D89A53 /* ViewController.swift */,
+				03DBACE5224A89120014AB97 /* DetailSplitViewController.swift */,
+			);
+			path = Split;
+			sourceTree = "<group>";
+		};
+		0390A297225292A5009C990C /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				03A55A05225542DF007E3AE3 /* ExpenseSetViewModel.swift */,
+				03A55A0322554291007E3AE3 /* ExpenseTableController.swift */,
+				03DBACF1224BC60C0014AB97 /* ExpenseViewController.swift */,
+				0390A28D22524BDF009C990C /* BalanceViewController.swift */,
+				03E89C5F224D4A6B006C2F5C /* AddExpenseViewController.swift */,
+				033B439E2254D804004AA9D1 /* ExpenseDetailViewController.swift */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
+		03DBACBF224964D20014AB97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03DBACC0224964D20014AB97 /* SplitModel.swift */,
+				0390A28222512EAF009C990C /* ExpenseModel.swift */,
+				03DBACD5224987B70014AB97 /* ParticipateModel.swift */,
+				03DBACD92249898A0014AB97 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03DBACC1224964D20014AB97 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				03DBACC2224964D20014AB97 /* SplitDAO.swift */,
+				03DBACD12249707B0014AB97 /* ExpenseDAO.swift */,
+				03DBACD3224983CA0014AB97 /* ParticipateDAO.swift */,
+				03DBACD7224988400014AB97 /* UserDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		03DBACC3224964D20014AB97 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0390A28622524449009C990C /* BarChart */,
+				03DBACC4224964D20014AB97 /* CoreDataManager.swift */,
+				033B439C22539F4A004AA9D1 /* AttachmentHandler.swift */,
+				03DBACC5224964D20014AB97 /* DateExtension.swift */,
+				03DBACCB22496C3C0014AB97 /* CellStyle.swift */,
+				03DBACDF22499CEE0014AB97 /* UItextFieldHelper.swift */,
+				03DBACE9224A91BE0014AB97 /* hasSplitProtocol.swift */,
+				03DBACEB224BA9850014AB97 /* ArrayHelper.swift */,
+				0390A23D224D717C009C990C /* ImageViewHelper.swift */,
+				0390A243224FE3BF009C990C /* TextFieldHelper.swift */,
+				0390A28422518752009C990C /* StringHelper.swift */,
+				0390A28B2252476B009C990C /* ColorHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		03DBACCA2249675B0014AB97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0390A297225292A5009C990C /* Expense */,
+				0390A296225292A0009C990C /* Split */,
+				0390A2952252929A009C990C /* User */,
+				03E89C61224D4A86006C2F5C /* Cells */,
+				032D75462242C43F008908FE /* CustomTopTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03E89C61224D4A86006C2F5C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */,
+				032D754E2242E468008908FE /* MemberViewCell.swift */,
+				03DBACEF224BC5FA0014AB97 /* ExpenseViewCell.swift */,
+				03E89C62224D4AD5006C2F5C /* AddExpenseViewCell.swift */,
+				0390A28F22526598009C990C /* BalanceViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9040A61A1FAE741200D89A53 = {
+			isa = PBXGroup;
+			children = (
+				9040A6251FAE741200D89A53 /* BillSplit */,
+				9040A63A1FAE741200D89A53 /* BillSplitTests */,
+				9040A6451FAE741300D89A53 /* BillSplitUITests */,
+				9040A6241FAE741200D89A53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9040A6241FAE741200D89A53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9040A6231FAE741200D89A53 /* BillSplit.app */,
+				9040A6371FAE741200D89A53 /* BillSplitTests.xctest */,
+				9040A6421FAE741200D89A53 /* BillSplitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9040A6251FAE741200D89A53 /* BillSplit */ = {
+			isa = PBXGroup;
+			children = (
+				03DBACCA2249675B0014AB97 /* Controllers */,
+				03DBACC1224964D20014AB97 /* DAO */,
+				03DBACC3224964D20014AB97 /* Helpers */,
+				03DBACBF224964D20014AB97 /* Models */,
+				032D75442242C14F008908FE /* Main.storyboard */,
+				9040A6261FAE741200D89A53 /* AppDelegate.swift */,
+				9040A62D1FAE741200D89A53 /* Assets.xcassets */,
+				9040A62F1FAE741200D89A53 /* LaunchScreen.storyboard */,
+				9040A6321FAE741200D89A53 /* Info.plist */,
+				033A0AB62249578300EB3EB8 /* BillSplit.xcdatamodeld */,
+			);
+			path = BillSplit;
+			sourceTree = "<group>";
+		};
+		9040A63A1FAE741200D89A53 /* BillSplitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9040A63B1FAE741200D89A53 /* BillSplitTests.swift */,
+				9040A63D1FAE741200D89A53 /* Info.plist */,
+			);
+			path = BillSplitTests;
+			sourceTree = "<group>";
+		};
+		9040A6451FAE741300D89A53 /* BillSplitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9040A6461FAE741300D89A53 /* BillSplitUITests.swift */,
+				9040A6481FAE741300D89A53 /* Info.plist */,
+			);
+			path = BillSplitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9040A6221FAE741200D89A53 /* BillSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9040A64B1FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplit" */;
+			buildPhases = (
+				9040A61F1FAE741200D89A53 /* Sources */,
+				9040A6201FAE741200D89A53 /* Frameworks */,
+				9040A6211FAE741200D89A53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillSplit;
+			productName = cardLayout;
+			productReference = 9040A6231FAE741200D89A53 /* BillSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9040A6361FAE741200D89A53 /* BillSplitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9040A64E1FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplitTests" */;
+			buildPhases = (
+				9040A6331FAE741200D89A53 /* Sources */,
+				9040A6341FAE741200D89A53 /* Frameworks */,
+				9040A6351FAE741200D89A53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9040A6391FAE741200D89A53 /* PBXTargetDependency */,
+			);
+			name = BillSplitTests;
+			productName = cardLayoutTests;
+			productReference = 9040A6371FAE741200D89A53 /* BillSplitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9040A6411FAE741200D89A53 /* BillSplitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9040A6511FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplitUITests" */;
+			buildPhases = (
+				9040A63E1FAE741200D89A53 /* Sources */,
+				9040A63F1FAE741200D89A53 /* Frameworks */,
+				9040A6401FAE741200D89A53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9040A6441FAE741200D89A53 /* PBXTargetDependency */,
+			);
+			name = BillSplitUITests;
+			productName = cardLayoutUITests;
+			productReference = 9040A6421FAE741200D89A53 /* BillSplitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9040A61B1FAE741200D89A53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nicolas Guary";
+				TargetAttributes = {
+					9040A6221FAE741200D89A53 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					9040A6361FAE741200D89A53 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9040A6221FAE741200D89A53;
+					};
+					9040A6411FAE741200D89A53 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9040A6221FAE741200D89A53;
+					};
+				};
+			};
+			buildConfigurationList = 9040A61E1FAE741200D89A53 /* Build configuration list for PBXProject "BillSplit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9040A61A1FAE741200D89A53;
+			productRefGroup = 9040A6241FAE741200D89A53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9040A6221FAE741200D89A53 /* BillSplit */,
+				9040A6361FAE741200D89A53 /* BillSplitTests */,
+				9040A6411FAE741200D89A53 /* BillSplitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9040A6211FAE741200D89A53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032D75452242C14F008908FE /* Main.storyboard in Resources */,
+				9040A6311FAE741200D89A53 /* LaunchScreen.storyboard in Resources */,
+				9040A62E1FAE741200D89A53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A6351FAE741200D89A53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A6401FAE741200D89A53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9040A61F1FAE741200D89A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A55A06225542DF007E3AE3 /* ExpenseSetViewModel.swift in Sources */,
+				033B439F2254D805004AA9D1 /* ExpenseDetailViewController.swift in Sources */,
+				9040A6291FAE741200D89A53 /* ViewController.swift in Sources */,
+				03DBACE022499CEE0014AB97 /* UItextFieldHelper.swift in Sources */,
+				03DBACDA2249898A0014AB97 /* UserModel.swift in Sources */,
+				03DBACC9224964D20014AB97 /* DateExtension.swift in Sources */,
+				03E89C63224D4AD5006C2F5C /* AddExpenseViewCell.swift in Sources */,
+				03DBACEA224A91BE0014AB97 /* hasSplitProtocol.swift in Sources */,
+				0390A29D2252A0F0009C990C /* SplitSetViewModel.swift in Sources */,
+				03DBACCC22496C3C0014AB97 /* CellStyle.swift in Sources */,
+				03E89C60224D4A6B006C2F5C /* AddExpenseViewController.swift in Sources */,
+				0390A292225281E0009C990C /* BasicBarChart.swift in Sources */,
+				03DBACD8224988400014AB97 /* UserDAO.swift in Sources */,
+				0390A28C2252476B009C990C /* ColorHelper.swift in Sources */,
+				0390A28522518752009C990C /* StringHelper.swift in Sources */,
+				0390A29422528E7A009C990C /* EditMemberViewController.swift in Sources */,
+				0390A29B22529CEE009C990C /* SplitCollectionController.swift in Sources */,
+				03DBACF2224BC60C0014AB97 /* ExpenseViewController.swift in Sources */,
+				0390A28E22524BDF009C990C /* BalanceViewController.swift in Sources */,
+				9040A6271FAE741200D89A53 /* AppDelegate.swift in Sources */,
+				0390A23E224D717C009C990C /* ImageViewHelper.swift in Sources */,
+				033B439D22539F4A004AA9D1 /* AttachmentHandler.swift in Sources */,
+				03DBACC6224964D20014AB97 /* SplitModel.swift in Sources */,
+				03DBACD4224983CA0014AB97 /* ParticipateDAO.swift in Sources */,
+				032D75182242284F008908FE /* ProfileViewController.swift in Sources */,
+				0390A2892252445C009C990C /* BarEntry.swift in Sources */,
+				03DBACD6224987B70014AB97 /* ParticipateModel.swift in Sources */,
+				0390A28322512EAF009C990C /* ExpenseModel.swift in Sources */,
+				03A55A0422554291007E3AE3 /* ExpenseTableController.swift in Sources */,
+				0390A29022526598009C990C /* BalanceViewCell.swift in Sources */,
+				0390A28A2252445C009C990C /* BarChart.swift in Sources */,
+				033A0AB82249578300EB3EB8 /* BillSplit.xcdatamodeld in Sources */,
+				03DBACC7224964D20014AB97 /* SplitDAO.swift in Sources */,
+				03DBACE222499D1B0014AB97 /* CreateSplitViewController.swift in Sources */,
+				03DBACE6224A89120014AB97 /* DetailSplitViewController.swift in Sources */,
+				03DBACC8224964D20014AB97 /* CoreDataManager.swift in Sources */,
+				032D754F2242E468008908FE /* MemberViewCell.swift in Sources */,
+				0390A244224FE3BF009C990C /* TextFieldHelper.swift in Sources */,
+				03DBACEC224BA9850014AB97 /* ArrayHelper.swift in Sources */,
+				03DBACF0224BC5FA0014AB97 /* ExpenseViewCell.swift in Sources */,
+				032D75472242C43F008908FE /* CustomTopTabBarController.swift in Sources */,
+				032D754D2242E36B008908FE /* MembersViewController.swift in Sources */,
+				9040A6551FAE7A6600D89A53 /* CollectionViewCell.swift in Sources */,
+				03DBACD22249707B0014AB97 /* ExpenseDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A6331FAE741200D89A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9040A63C1FAE741200D89A53 /* BillSplitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040A63E1FAE741200D89A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9040A6471FAE741300D89A53 /* BillSplitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9040A6391FAE741200D89A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9040A6221FAE741200D89A53 /* BillSplit */;
+			targetProxy = 9040A6381FAE741200D89A53 /* PBXContainerItemProxy */;
+		};
+		9040A6441FAE741200D89A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9040A6221FAE741200D89A53 /* BillSplit */;
+			targetProxy = 9040A6431FAE741200D89A53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9040A62F1FAE741200D89A53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9040A6301FAE741200D89A53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9040A6491FAE741300D89A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9040A64A1FAE741300D89A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9040A64C1FAE741300D89A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H5DD78DYB;
+				INFOPLIST_FILE = "$(SRCROOT)/BillSplit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polytech.billSplit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9040A64D1FAE741300D89A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H5DD78DYB;
+				INFOPLIST_FILE = "$(SRCROOT)/BillSplit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polytech.billSplit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9040A64F1FAE741300D89A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				INFOPLIST_FILE = cardLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillSplit.app/BillSplit";
+			};
+			name = Debug;
+		};
+		9040A6501FAE741300D89A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				INFOPLIST_FILE = cardLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillSplit.app/BillSplit";
+			};
+			name = Release;
+		};
+		9040A6521FAE741300D89A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				INFOPLIST_FILE = cardLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cardLayout;
+			};
+			name = Debug;
+		};
+		9040A6531FAE741300D89A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				INFOPLIST_FILE = cardLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cardLayout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9040A61E1FAE741200D89A53 /* Build configuration list for PBXProject "BillSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9040A6491FAE741300D89A53 /* Debug */,
+				9040A64A1FAE741300D89A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9040A64B1FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9040A64C1FAE741300D89A53 /* Debug */,
+				9040A64D1FAE741300D89A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9040A64E1FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9040A64F1FAE741300D89A53 /* Debug */,
+				9040A6501FAE741300D89A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9040A6511FAE741300D89A53 /* Build configuration list for PBXNativeTarget "BillSplitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9040A6521FAE741300D89A53 /* Debug */,
+				9040A6531FAE741300D89A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		033A0AB62249578300EB3EB8 /* BillSplit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				033A0AB72249578300EB3EB8 /* BillSplit.xcdatamodel */,
+			);
+			currentVersion = 033A0AB72249578300EB3EB8 /* BillSplit.xcdatamodel */;
+			path = BillSplit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9040A61B1FAE741200D89A53 /* Project object */;
+}
