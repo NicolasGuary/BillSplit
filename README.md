@@ -1,3 +1,3 @@
 # BillSplit
 
-![alt text](https://imgur.com/FJs879t)
+![alt text](https://i.imgur.com/FJs879t.png)
